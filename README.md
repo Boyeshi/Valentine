@@ -23,8 +23,21 @@ Visit the live website at: **https://boyeshi.github.io/Valentine/**
 
 Simply open `index.html` in your web browser to run locally.
 
+Or use a local server:
+```bash
+python3 -m http.server 8000
+# Then visit http://localhost:8000
+```
+
+## 🚀 Deployment
+
+This website automatically deploys to GitHub Pages when changes are pushed to the `main` branch.
+
+**First-time setup required:** GitHub Pages must be enabled in repository settings with "GitHub Actions" as the source. See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed setup instructions.
+
 ## 📄 Files
 
 - `index.html` - Main HTML structure
 - `style.css` - Styling and animations  
 - `script.js` - Interactive button behavior
+- `.github/workflows/deploy.yml` - GitHub Pages deployment workflow
