@@ -33,7 +33,24 @@ python3 -m http.server 8000
 
 This website automatically deploys to GitHub Pages when changes are pushed to the `main` branch.
 
-**First-time setup required:** GitHub Pages must be enabled in repository settings with "GitHub Actions" as the source. See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed setup instructions.
+### Quick Deployment
+
+```bash
+# Option 1: Use deployment script (recommended)
+./deploy.sh
+
+# Option 2: Manual deployment
+git add .
+git commit -m "Your changes"
+git push origin main
+
+# Option 3: Verify deployment status
+./verify-deployment.sh
+```
+
+See [DEPLOY-QUICK.md](DEPLOY-QUICK.md) for quick start guide or [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
+
+**First-time setup required:** GitHub Pages must be enabled in repository settings with "GitHub Actions" as the source.
 
 ## 📄 Files
 
